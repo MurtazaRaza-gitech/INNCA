@@ -1,20 +1,17 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚀 SHEHRAM MEHMOOD | The Architect
+**Founder & CEO • Web Developer • Product Strategist**
 
-# Run and deploy your AI Studio app
+Welcome to my official portfolio. This platform showcases my work in web development, startup building, and platform design.
 
-This contains everything you need to run your app locally.
+## 🛠️ Tech Stack
+- **Frontend:** React, Tailwind CSS, Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** Vercel / GitHub Pages
 
-View your app in AI Studio: https://ai.studio/apps/drive/195sSxPlng3BkDa2Wn7W72Oi2qY_WKFPv
+## 📂 Installation
+1. `npm install`
+2. `npm run dev`
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📧 Contact
+- **Email:** innca.tech@gmail.com
+- **LinkedIn:** [M. Shehram](https://www.linkedin.com/in/m-shehram-6a706639b/)
