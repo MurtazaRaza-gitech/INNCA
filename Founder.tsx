@@ -20,7 +20,7 @@ const Founder: React.FC = () => {
 
   // Direct link transformation for Google Drive image
   const founderImageId = '1vKw81k19cLKaXE2iwLKMtW0xOa2yisn3';
-  const founderImageUrl = `https://drive.google.com/thumbnail?id=${founderImageId}&sz=w1000`;
+  const founderImageUrl = `https://drive.google.com/file/d/1vKw81k19cLKaXE2iwLKMtW0xOa2yisn3/view?usp=sharing`;
 
   return (
     <div className="pt-32 md:pt-40 pb-24 md:pb-32 min-h-screen bg-black relative">
