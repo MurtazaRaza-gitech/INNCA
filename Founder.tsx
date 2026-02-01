@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { User, Code2, Rocket, PenTool, Globe, Briefcase, Linkedin, MessageCircle, Mail, Zap, Terminal } from 'lucide-react';
+import { Code2, Rocket, PenTool, Globe, Briefcase, Linkedin, MessageCircle, Mail, Zap, Terminal } from 'lucide-react';
 
 const Founder: React.FC = () => {
   const skills = [
@@ -18,6 +18,10 @@ const Founder: React.FC = () => {
     { icon: Mail, href: "mailto:innca.tech@gmail.com" }
   ];
 
+  // Direct link transformation for Google Drive image
+  const founderImageId = '1vKw81k19cLKaXE2iwLKMtW0xOa2yisn3';
+  const founderImageUrl = `https://drive.google.com/thumbnail?id=${founderImageId}&sz=w1000`;
+
   return (
     <div className="pt-32 md:pt-40 pb-24 md:pb-32 min-h-screen bg-black relative">
       <div className="absolute top-1/4 left-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-purple-600/5 blur-[100px] md:blur-[180px] rounded-full pointer-events-none"></div>
@@ -32,10 +36,20 @@ const Founder: React.FC = () => {
               className="sticky top-40"
             >
               <div className="relative aspect-[4/5] rounded-[40px] md:rounded-[60px] overflow-hidden border border-white/10 bg-[#080808] shadow-[0_0_80px_rgba(168,85,247,0.1)] group">
-                 <div className="absolute inset-0 flex items-center justify-center bg-white/2">
-                    <User size={120} className="md:size-[160px] text-white/[0.03] group-hover:scale-110 transition-transform duration-[2000ms]" />
+                 {/* Founder Image Integration */}
+                 <div className="absolute inset-0 flex items-center justify-center">
+                    <img 
+                      src={founderImageUrl} 
+                      alt="Shehram Mehmood - Founder of Innca" 
+                      className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-[1500ms] scale-105 group-hover:scale-100"
+                      onError={(e) => {
+                        // Fallback in case of image load failure
+                        (e.target as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
                  </div>
-                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                 
+                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
                  <div className="absolute bottom-8 md:bottom-12 left-8 md:left-12 right-8 md:right-12">
                    <div className="text-[10px] md:text-sm font-black text-purple-500 uppercase tracking-[0.4em] mb-3 md:mb-4 flex items-center justify-center lg:justify-start">
                      <div className="w-6 md:w-8 h-px bg-purple-500 mr-2 md:mr-3"></div>
